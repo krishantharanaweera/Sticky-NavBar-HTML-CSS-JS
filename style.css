@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    font-family: cursive;
+}
+
+.top-container{
+    background-color: aquamarine;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-container h1{
+    font-size:48px;
+    letter-spacing: 2px;
+}
+
+.text{
+    margin:50px 5%;
+}
+
+.navbar{
+    display: flex;
+    position:fixed;
+    background-color: white;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s linear;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin:0 10px;
+    color:black;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+.navbar ul li a:hover{
+    color:green;
+}
+
+.navbar img{
+    width:50px;
+    border-radius: 50%;
+}
+
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color:white;
+}
+.navbar.active img{
+    border:2px solid aqua;
+}
